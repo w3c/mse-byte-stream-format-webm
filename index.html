@@ -98,8 +98,9 @@
               authors: ["Frank Galligan", "Kilroy Hughes", "Thomás Inskip", "David Ronca"],
               publisher: "WebM Project",
           },
-       }
+       },
 
+       xref: ["html"]
       };
     </script>
     <!-- script to register bugs -->
@@ -214,8 +215,8 @@
       <p>The user agent MUST accept and ignore any elements other than an <a def-id="webm-ebml-header"></a> or a <a def-id="webm-cluster"></a> that occur before, in between, or after the <a def-id="webm-info"></a> and
       <a def-id="webm-tracks"></a> elements.</p>
 
-      <p>The user agent MUST source attribute values for id, kind, label and language for <a def-id="audio-track"></a>, <a def-id="video-track"></a> and
-        <a def-id="text-track"></a> objects as described for WebM in the in-band tracks spec [[INBANDTRACKS]].</p>
+      <p>The user agent MUST source attribute values for id, kind, label and language for {{AudioTrack}}, {{VideoTrack}} and
+        {{TextTrack}} objects as described for WebM in the in-band tracks spec [[INBANDTRACKS]].</p>
     </section>
 
     <section id="webm-media-segments">
